@@ -6,7 +6,7 @@
     if (window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
     gsap.from(".hero-copy > *", { y: 28, opacity: 0, duration: 0.85, stagger: 0.08, ease: "power3.out" });
     gsap.from(".anchor", { scale: 0.92, opacity: 0, duration: 0.9, ease: "power3.out" });
-    animateAz(gsap);
+    animateMap(gsap);
     gsap.from(".service-card", { scrollTrigger: { trigger: ".cards", start: "top 78%" }, y: 24, opacity: 0, duration: 0.6, stagger: 0.08, ease: "power2.out" });
   };
   const fallback = () => document.querySelector(".anchor")?.classList.add("fallback-active");
